@@ -99,6 +99,7 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	opacity: 0.9;
 }
 
 .spad {
@@ -1517,7 +1518,6 @@ ol {
 /* Novas Cenas */
 div.cata.new a.linkEA
 {
-	/* font-style: none; */
 	color: white;
 }
 
@@ -1528,7 +1528,74 @@ div.cata.new a.linkEA:hover {
 
 div.section-title h2.tituloInscricoes{
 	color: blue;
+	cursor:	progress;
 }
 div.section-title h2.tituloInscricoes:hover {
 	color: red;
+}
+#divFormulario div{
+	color: white;
+}
+#divFormulario h3 {
+	color:white;
+}
+#divFormulario form#form-participante{
+	color: white !important;
+}
+#divFormulario form#form-participante h3{
+	color: white !important;
+}
+#divFormulario form#form-participante ul{
+	color: white !important;
+}
+#divFormulario form#form-participante input {
+	background-color: orange;
+}
+div.nt-item span.textoNovidadesInscricoes {
+	font-family: robotica;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin: 0px;
+}
+section#main-section div.container-fluid {
+	margin: 0px;
+}
+section#main-section div.container-fluid div.row aside.col-md-1 {
+	padding: 0px !important;
+}
+
+div#orientacao {
+	height: 25vh; 
+	min-height: 200px;
+	overflow: auto;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5%;
+}
+div#orientacao ul.orient-items {
+	list-style: none;
+}
+div#orientacao ul.orient-items li.orientationIcons{
+	border-radius: 5px;
+}
+div.footer-logo h3.titlePatrocionadores {
+	font-family: Impact;
+}
+
+/* Animações */
+.devilhr{
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 100%;
+    animation: 5s infinite alternate irrequieto;
+}
+@keyframes irrequieto {
+    from {
+        width: 100%;
+        border: 2px solid black;
+    }
+    to {
+        width: 0%;
+        border: 2px solid blue;
+    }
 }

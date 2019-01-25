@@ -14,7 +14,7 @@ $(window).on('load', function() {
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut(); 
-	$("#preloder").delay(400).fadeOut("slow");
+	$("#preloder").delay(200).fadeOut("slow");
 
 });
 
@@ -78,3 +78,33 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+/* Parte Nova */
+window.onload = () => {
+	document.addEventListener('scroll', changeOrientationBar)
+}
+
+
+/* Funções */
+function changeOrientationBar() {
+	let scrolly = window.scrollY
+
+	/* Ircones */
+	let orientationIcons = document.getElementsByClassName('orientationIcons')
+	
+	/*
+	[0] - Mapa
+	[1] - Informações
+	[2] - Regulamento e Avisos Importantes
+	[3] - Inscrições
+	 */
+	//-----
+	//Fazer o mesmo para as outras quando tiverem concluidas
+	if(scrolly >= 1092 && scrolly <= 1642){
+		orientationIcons[1].style.color = 'red'
+		orientationIcons[1].style.backgroundColor = 'blue'
+	}
+	else {
+		orientationIcons[1].style.color = 'unset' 
+		orientationIcons[1].style.backgroundColor = 'unset'
+	}
+}
