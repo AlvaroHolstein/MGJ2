@@ -107,7 +107,7 @@ window.onload = () => {
 function sendEmail(eve) {
 	eve.preventDefault()
 	let form = {
-		nome: document.getElementById('nome').value,
+		name: document.getElementById('nome').value,
 		user_mail: document.getElementById('mail').value,
 		subject: document.getElementById('subject').value,
 		mensagem: document.getElementById('mensagem').value
