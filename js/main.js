@@ -79,16 +79,19 @@ $(window).on('load', function () {
 })(jQuery);
 
 /* Parte Nova */
+// Get the navbar
+let navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+let sticky = navbar.offsetTop;
 let timer = null
+let contadorImagens = 0
+let logo = null
 window.onload = () => {
 	initialize()
 	document.addEventListener('scroll', stickyNavBar)
 
 	/* Teste */
-	window.addEventListener('click', () => {
-		let iniciodiv1 = document.getElementById('latestNews').getBoundingClientRect()
-		console.log(iniciodiv1)
-	})
 	timer = window.setInterval(mudarLogo, 1000) //Acho que é em segundos que isto está
 	/* diferenciar quando se está a mostrar as informações importantes ou o regulamento */
 
@@ -96,13 +99,31 @@ window.onload = () => {
 		changeTitlesSeccao3()
 	}
 
-
+	if(window.location.pathname == "/contact.html"){
+		document.getElementById('form').addEventListener('submit', sendEmail)
+	}
 }
-// Get the navbar
-let navbar = document.getElementById("nav");
 
-// Get the offset position of the navbar
-let sticky = navbar.offsetTop;
+function sendEmail(eve) {
+	eve.preventDefault()
+	let form = {
+		nome: document.getElementById('nome').value,
+		user_mail: document.getElementById('mail').value,
+		subject: document.getElementById('subject').value,
+		mensagem: document.getElementById('mensagem').value
+	};
+
+	console.log(form)
+	emailjs.send("gmail", "contact_form", form).
+		then(response => {
+			console.log('Boa ', response.status, response.text)
+		},
+			error => {
+				console.log('Ups ', error)
+			}
+		)
+}
+
 
 /* Funções */
 function stickyNavBar() {
@@ -212,8 +233,7 @@ function changeOrientationBar() {
 
 	// console.log(scrolly)
 }
-let contadorImagens = 0
-let logo = null
+
 function mudarLogo() {
 	let img = document.getElementById('imagemMudar')
 
