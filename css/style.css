@@ -1578,11 +1578,35 @@ div#orientacao ul.orient-items {
 div#orientacao ul.orient-items li.orientationIcons{
 	border-radius: 5px;
 }
+div#orientacao ul.orient-items li.orientationIcons a{
+	color: black;
+}
 div.footer-logo h3.titlePatrocionadores {
 	font-family: Impact;
 }
 
+ul.list-inline li.list-inline-item a.tituloSeccao3:hover {
+	cursor: pointer; /* Fazer efeito ao clicar */
+}
+
+a i.fa.fa-facebook:hover {
+	color: blue;
+}
+
+/*Mapa*/
+#map {
+	width: 100%;
+	height: 300px;
+}
 /* Animações */
+@keyframes crescer {
+	to {
+		width: initial;
+	}
+	from {
+		width: 40px;
+	}
+}
 .devilhr{
     border: 2px solid black;
     border-radius: 50px;
