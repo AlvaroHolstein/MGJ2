@@ -250,6 +250,7 @@ ol {
 
 .header-section {
 	background: #131313;
+	z-index: 100;
 	clear: both;
 	overflow: hidden;
 	padding: 18px 0;
@@ -1563,15 +1564,16 @@ section#main-section div.container-fluid {
 section#main-section div.container-fluid div.row aside.col-md-1 {
 	padding: 0px !important;
 }
-
-div#orientacao {
-	height: 25vh; 
-	min-height: 200px;
-	overflow: auto;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 5%;
+.sticky {
+	position: fixed;
+  	top: 0;
+	  width: 100%;
+	  
 }
+/* header.header-section {
+	position: -webkit-sticky;
+	position: sticky !important;
+} */
 div#orientacao ul.orient-items {
 	list-style: none;
 }

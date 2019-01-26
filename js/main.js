@@ -82,7 +82,7 @@ $(window).on('load', function () {
 let timer = null
 window.onload = () => {
 	initialize()
-	if (window.location.pathname == '/index.html') document.addEventListener('scroll', changeOrientationBar)
+	document.addEventListener('scroll', stickyNavBar)
 
 	/* Teste */
 	window.addEventListener('click', () => {
@@ -95,10 +95,27 @@ window.onload = () => {
 	if (window.location.pathname == "/index.html") {
 		changeTitlesSeccao3()
 	}
-}
 
+
+}
+// Get the navbar
+let navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+let sticky = navbar.offsetTop;
 
 /* Funções */
+function stickyNavBar() {
+
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
+
 function changeTitlesSeccao3() {
 	let containersSeccao3 = document.getElementsByClassName('containersSeccao3')
 	let tituloSeccao3 = document.getElementsByClassName('tituloSeccao3')
