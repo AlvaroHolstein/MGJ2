@@ -741,7 +741,7 @@ ol {
 }
 
 .footer-logo img {
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 }
 
 .footer-widget {
@@ -1342,8 +1342,8 @@ ol {
 	.review-item {
 		margin-bottom: 63px;
 	}
-	.footer-logo {
-		margin-bottom: 50px;
+	div.footer-logo {
+		/* margin-bottom: 50px; */
 	}
 	.latest-blog .lb-item .lb-thumb {
 		width: 80px;
@@ -1606,6 +1606,9 @@ a i.fa.fa-facebook:hover {
 	background-color: white;
 }
 
+img.imgLogo{
+	/* height: 20vh; */
+}
 /* #avisosimportantes div.textoAvisosImportantes a.link {
 	display: inline-block;
 	color: yellow;

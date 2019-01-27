@@ -92,7 +92,7 @@ window.onload = () => {
 	document.addEventListener('scroll', stickyNavBar)
 
 	/* Teste */
-	timer = window.setInterval(mudarLogo, 1000) //Acho que é em segundos que isto está
+	// timer = window.setInterval(mudarLogo, 1000) //Acho que é em segundos que isto está
 	/* diferenciar quando se está a mostrar as informações importantes ou o regulamento */
 
 	if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
