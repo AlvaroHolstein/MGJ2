@@ -99,7 +99,7 @@ window.onload = () => {
 		changeTitlesSeccao3()
 	}
 
-	if(window.location.pathname == "/contact.html"){
+	if (window.location.pathname == "/contact.html") {
 		document.getElementById('form').addEventListener('submit', sendEmail)
 	}
 }
@@ -108,9 +108,11 @@ function sendEmail(eve) {
 	eve.preventDefault()
 	let form = {
 		name: document.getElementById('nome').value,
-		user_mail: document.getElementById('mail').value,
+		user_email: document.getElementById('mail').value,
 		subject: document.getElementById('subject').value,
-		mensagem: document.getElementById('mensagem').value
+		text: document.getElementById('mensagem').value,
+		date: new Date().toISOString().split('T')[0],
+		time: new Date().toISOString().split('T')[1]
 	};
 
 	console.log(form)
@@ -122,6 +124,12 @@ function sendEmail(eve) {
 				console.log('Ups ', error)
 			}
 		)
+
+	/* Limpar o formulário depois de o submeter */
+	document.getElementById('mensagem').value = ""
+	document.getElementById('subject').value = ""
+	document.getElementById('mail').value = ""
+	document.getElementById('nome').value = ""
 }
 
 

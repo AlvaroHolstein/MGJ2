@@ -1595,6 +1595,30 @@ a i.fa.fa-facebook:hover {
 	color: blue;
 }
 
+#avisosimportantes div.textoAvisosImportantes a.link {
+	display: inline-block;
+	color: red;
+	width: auto;
+	object-fit: cover; 
+}
+
+#inscricoes div.container {
+	background-color: #252525;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#inscricoes div.container div.row div h2 {
+	color: red;
+	margin-bottom: 10px;
+}
+#inscricoes div.container div.row div.form {
+	height: 3200px;
+}
+
+#localExato a:hover {
+	color: blue;
+	cursor: help;
+}
 /*Mapa*/
 #map {
 	width: 100%;

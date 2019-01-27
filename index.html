@@ -119,21 +119,26 @@
 
 	<!-- Div que vai ter a Main Section e a barra de orientação -->
 	<section id="main-section">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<article>
 						<h2 class="text-center"><i class="fas fa-long-arrow-alt-down"></i> Estamos Aqui<i class="fas fa-long-arrow-alt-down"></i></h2>
 						<div id="map" class="col-xl-12 col-lg-12">
 						</div>
-						<p>
-							Local: ESMAD - ESCOLA SUPERIOR DE MEDIA ARTES E DESIGN
-							Rua Dom Sancho I 1, Argivai - Vila do Conde
-						</p>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								Local: ESMAD - ESCOLA SUPERIOR DE MEDIA ARTES E DESIGN
+								Rua Dom Sancho I 1, Argivai - Vila do Conde
+							</li>
+							<li id="localExato" class="list-inline-item localizacaoExata">
+								<a role="button" data-toggle="modal" data-target="#mapas">(Localização Exata)</a>
+							</li>
+						</ul>
 					</article>
 					<hr class="devilhr">
 					<article id="informacoes">
-						<h2>Informações</h2>
+						<h2 class="text-center">Informações</h2>
 						<p>Inscrições: As incrições já se encontram fechadas, número limite de participantes alcançado.</p>
 
 						<p>Organização: Escola Superior de Media Artes e Design (ESMAD | P.Porto)</p>
@@ -162,10 +167,15 @@
 
 						<!-- <h2 class="text-center">Como chegar à ESMAD</h2> -->
 						<!-- <div id="map" class="col-xs-12 col-sm-12 col-md-12" style="margin-bottom: 50px"></div> -->
-
 					</article>
-					<hr class="devilhr">
-					<article id="avisosRegulamento">
+				</div>
+			</div>
+		</div>
+		<hr class="devilhr">
+		<article id="avisosRegulamento">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
 						<ul class="list-inline text-center">
 							<li class="list-inline-item">
 								<a class="tituloSeccao3 h2" data-target="#avisosimportantes" data-toggle="collapse" role="button">Avisos
@@ -176,98 +186,92 @@
 								<a class="tituloSeccao3 h2" data-target="#regulamento" data-toggle="collapse" role="button">Regulamento</a>
 							</li>
 						</ul>
-						<!-- Avisos Importantes -->
-						<div class="collapse show containersSeccao3" id="avisosimportantes">
-							<div class="card card-body">
-								<p>-Todas as informações vão ser enviadas por email assim que possível e irão estar também
-									disponíveis
-									no
-									facebook e website do evento respetivamente - https://www.facebook.com/madgamejam/ e
-									http://www.gamejam.intermediartes.com (ainda desatualizado)</p>
-								<p>- Existe um discord do evento que devem usar para receber informação durante o evento e para
-									tirarem
-									duvidas antes e durante do evento com maior facilidade, juntem-se a partir deste link -
-									https://discord.gg/ZtnDq3H
+					</div>
+					<!-- Avisos Importantes -->
+					<div class="collapse show containersSeccao3" id="avisosimportantes">
+						<div class="card card-body textoAvisosImportantes">
+							<!-- - Todas as informações vão ser enviadas por email assim que possível e irão estar também disponíveis no
+												facebook e website do evento respetivamente - https://www.facebook.com/madgamejam/ (website ainda em
+												desenvolvimento, estará disponivel em breve), no entanto fica link para o website do ano anterior:
+												http://www.gamejam.intermediartes.com, isto em principio já não vai aprecer -->
+							<p>- Existe um discord do evento que devem usar para receber informação durante o evento e para tirarem duvidas
+								antes e durante do evento com maior facilidade, <a class="link" href="https://discord.gg/ZtnDq3H" target="_blank">juntem-se</a>.</p>
 
-								</p>
-								<p> - Se possível tragam extensões e cabos de rede, embora existam vários disponíveis no local.
-								</p>
+							<p> - Se possível tragam extensões e cabos de rede, embora existam vários disponíveis no local.
+							</p>
+							<p>- Irá existir sempre snacks e café disponível.</p>
 
-								<p> - Irá existir sempre snacks e café disponível.</p>
+							<p> - As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.
+							</p>
+							<p>- Existe estacionamento gratuito, abrigado e disponível 24H no local.</p>
 
-								<p> - As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.</p>
+							<p>- Temos uma sala com blackout para descanso.</p>
 
-								<p>- As refeições não são próprias para vegans/vegetarianos e contêm gluten.</p>
+							<p> - Aconselhamos que tragam colchões/sacos cama e almofadas para dormirem.
+							</p>
+							<p>- Existem num raio de 500 metros, Burguer King, Pizza Hut, Pingo Doce, Continente, Staples, Worten, Metro,
+								Cafés e O BEM COMER (takeaway).</p>
 
-								<p>- Existe estacionamento gratuito, abrigado e disponível 24H no local.</p>
+							<p>- Existe possibilidade de transporte do metro de Vila do conde/Alto de pega até ao local, basta contactarem
+								a
+								<a href="https://www.facebook.com/madgamejam/" target="_blank" class="link">pagina do facebook</a>,
+								ou mandar
+								SMS para 912259093 com pelo menos 1 dia de
+								antecedência.</p>
 
-								<p>- Temos uma sala com blackout para descanso.</p>
-
-								<p>- Aconselhamos que tragam colchões/sacos cama e almofadas para dormirem.</p>
-
-								<p>- Existem num raio de 500 metros, Burguer King, Pizza Hut, Pingo Doce, Continente, Staples,
-									Worten,
-									Metro, Cafés e Água na boca (takeaway).</p>
-
-								<p>- Existe possibilidade de transporte do metro de Vila do conde/Alto de pega até ao local, basta
-									contactarem a pagina do facebook (https://www.facebook.com/madgamejam/, ou mandar SMS para
-									912259093)
-									com pelo menos 1 dia de antecedência.
-
-								</p>
-								<p>- Quem vier sozinho, será colocado numa equipa feita de pessoas sozinhas, ou juntado a uma
-									equipa
-									que
-									não tenha ainda 5 membros.
-								</p>
-							</div>
+							<p>- Quem vier sozinho, será colocado numa equipa feita de pessoas sozinhas, ou juntado a uma equipa que não
+								tenha
+								ainda 5 membros.</p>
 						</div>
+					</div>
 
-						<!-- Regulamento -->
-						<div class="collapse show containersSeccao3" id="regulamento">
-							<div class="card card-body">
-								<p>- As equipas podem ser constituídas por até 5 participantes, criadas com antecedência ou na
-									hora.
-								</p>
-								<p>
-									- O jogo deve ser desenvolvido para correr em sistemas operativos Windows ou Mac OSX, como
-									executável
-									ou
-									aplicação Web.
-								</p>
-								<p> - O tema e regras específicas para o jogo serão anunciados no próprio dia.
-								</p>
-								<p>
-									- Os jogos terão de se relacionar de alguma forma com este tema.
+					<!-- Regulamento -->
+					<div class="collapse show containersSeccao3" id="regulamento">
+						<div class="card card-body textoRegulamento">
+							<p> - As equipas podem ser constituídas por até 5 participantes, criadas com antecedência ou na hora.
+							</p>
+							<p> - O jogo deve ser desenvolvido para correr em sistemas operativos Windows ou Mac OSX, como executável ou
+								aplicação Web.</p>
 
-								</p>
-								<p>
-									- Cada equipa é livre de usar as ferramentas que quiserem, desde que as tenha de forma legal na
-									sua
-									máquina. É aconselhada a utilização de motores de jogos gráficos (ex. Unreal, Unity) e plugins
-									gratuitos de
-									forma a facilitar o desenvolvimento de jogos.
-								</p>
-								<p>
-									- Os materiais / Assets que sejam utilizados terão de ser criados pela própria equipa no dia,
-									ou
-									livres
-									de
-									direitos / royalty free.</p>
-								<p>
-									- O evento irá realizar-se nas instalações da ESMAD (Escola Superior de Media Artes e Design).
-								</p>
-								<p>- As inscrições terminam no dia 14 de Março de 2018 e estão limitadas a 50 pessoas ou a 10
-									equipas.</p>
-							</div>
+							<p>- O tema e regras específicas para o jogo serão anunciados no próprio dia.</p>
+
+							<p>- Os jogos terão de se relacionar de alguma forma com este tema.</p>
+
+							<p>- Cada equipa é livre de usar as ferramentas que quiserem, desde que as tenha de forma legal na sua máquina.
+								É
+								aconselhada a utilização de motores de jogos gráficos (ex. Unreal, Unity) e plugins gratuitos de forma a
+								facilitar o desenvolvimento de jogos.</p>
+
+							<p>- Os materiais / Assets que sejam utilizados terão de ser criados pela própria equipa no dia, ou livres de
+								direitos / royalty free.</p>
+
+							<p> - O evento irá realizar-se nas instalações da ESMAD (Escola Superior de Media Artes e Design).
+							</p>
+							<p> - As inscrições terminam no dia 18 de Fevereuri de 2019 e estão limitadas a 100 pessoas.
+							</p>
+							<p> - A organização não se responsabiliza por qualquer dano causado ao espaço ou materiais expostos.
+							</p>
 						</div>
-					</article>
-					<hr class="devilhr">
-					<article id="inscricoes">
-						<h2>Inscrições</h2>
-					</article>
+					</div>
 				</div>
-				<!-- <aside class="col-md-1">
+			</div>
+		</article>
+
+		<hr class="devilhr">
+		<article id="inscricoes">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-center">Inscrições</h2>
+					</div>
+					<div class="col-md-12 form">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczjdxkeDQkyqSmydNHNrAmP-qrayzzmZIqJUZiXmX0Qu9mYw/viewform?embedded=true"
+						 width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">A carregar...</iframe>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- <aside class="col-md-1">
 					<div id="orientacao" class="text-center">
 						<ul class="orient-items">
 							<li class="orientationIcons"><a href="#map"><i class="fas fa-ad"></i></a></li>
@@ -277,8 +281,6 @@
 						</ul>
 					</div>
 				</aside> -->
-			</div>
-		</div>
 	</section>
 
 
@@ -300,8 +302,9 @@
 
 				</div>
 				<div class="col-lg-6">
-					<div class="footer-logo text-center"> <!-- Fazer com que isto vá mudar de logo ao fim de x tempo -->
-							<img id="imagemMudar" src="img/MGJ/Logo_ciano.png" alt="">
+					<div class="footer-logo text-center">
+						<!-- Fazer com que isto vá mudar de logo ao fim de x tempo -->
+						<img id="imagemMudar" src="img/MGJ/Logo_ciano.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-12 text-center">
@@ -398,6 +401,26 @@
 		</div>
 	</footer>
 	<!-- Footer section end -->
+
+	<!-- Modal com os mapas com legendas -->
+	<div class="modal fade" id="mapas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Localização Exata</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!--====== Javascripts & Jquery ======-->
