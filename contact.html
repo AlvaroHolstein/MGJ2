@@ -13,6 +13,8 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	 crossorigin="anonymous">
 	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWwaEDkLeJWWeW2VzjqxXCJsqXuzqPLRc&amp;callback=Mapa">
 	</script>
 	<!-- Stylesheets -->
@@ -70,21 +72,29 @@
 
 
 	<!-- Latest news section -->
-	<!-- <div class="latest-news-section">
-		<div class="ln-title">Latest News</div>
+	<div id="latestNews" class="latest-news-section">
+		<div class="ln-title">Novidades</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-				<div class="nt-item"><span class="strategy">strategy</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
-				<div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+				<div class="nt-item"><span class="new">Data de Inicio</span>De 22 a 24 de Fevereiro na <a target="_blank" href="https://www.google.com/maps/place/Campus+2+-+P.Porto+%7C+ESMAD/@41.3668624,-8.7404978,17z/data=!3m1!4b1!4m5!3m4!1s0xd24441837aa9c2d:0x39b9a396dac2269d!8m2!3d41.3668584!4d-8.7383091">ESMAD</a></div>
+				<div class="nt-item"><i class="fas fa-gamepad"></i> | <span class="textoNovidadesInscricoes">Tens até ao dia 17 de
+						Fevereiro para te <a href="./index.html#informacoes">Inscreveres</a></span> (Faltam <span class="btn btn-outline-danger" style="margin: 0px;">
+						<script>
+							let currentDate = new Date().getTime();
+							let endDate = new Date("2019/02/17").getTime();
+							let daysLeft = Math.abs(endDate - currentDate);
+							document.write(Math.ceil(daysLeft / 86400000))
+						</script></span> dias) | <i class="fas fa-gamepad"></i>
+				</div>
+				<!-- <div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div> -->
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<!-- Latest news section end -->
 
 
 	<!-- Page info section -->
-	<section class="page-info-section">
+	<section class="page-info-section" style="margin-top: 10px;">
 		<!-- <div class="pi-content"> -->
 		<div class="container">
 			<div class="row">
@@ -98,7 +108,7 @@
 
 
 	<!-- Page section -->
-	<section class="page-section spad contact-page">
+	<section class="page-section spad contact-page" style="padding-top: 0px;">
 		<div class="container">
 			<!-- <div class="map" id="map-canvas"></div> -->
 			<div class="row">
@@ -161,7 +171,7 @@
 	<!-- Footer top section -->
 	<!-- 7 -->
 	<!-- Dá para fazer umas cenas engarçadas com isto -->
-	<section class="footer-top-section">
+	<section class="footer-top-section" >
 		<div class="container">
 			<div class="footer-top-bg">
 				<!-- <img src="img/MGJ/Logo_ciano.png" style="margin-left: 20px;" alt=""> -->
@@ -169,7 +179,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="footer-logo">
-						<img src="img/MGJ/Logo - Black.png" alt="até te carregas te" />
+						<img src="img/MGJ/novo_logo.png" alt="até te carregas te" />
 						<!-- <h3 class="titlePatrocionadores">Patrocionadores</h3>
 							<h5>Isto vai ser um footer bem lindo muito bem</h5> -->
 					</div>
@@ -180,9 +190,6 @@
 						<!-- Fazer com que isto vá mudar de logo ao fim de x tempo -->
 						<img id="imagemMudar" src="img/MGJ/Logo_ciano.png" alt="">
 					</div>
-				</div>
-				<div class="col-md-12 text-center">
-					<h2>Patrocionios</h2>
 				</div>
 				<!-- <div class="col-lg-4 col-md-6"> -->
 				<!-- <div class="footer-widget mb-5 mb-md-0">
