@@ -1609,7 +1609,7 @@ a i.fa.fa-facebook:hover {
 só se for para os contactos */
 
 #avisosRegulamento div.container div.col-md-12 ul.list-inline, article#informacoes h2,
-#article-map h2 {
+#article-map div.EstamosAqui {
 	background-image: url("../img/pattern.png");
 	background-repeat: repeat;
 	padding: 72px 0;
@@ -1641,9 +1641,27 @@ article#informacoes h2, #article-map h2 {
 article#informacoes h2 {
 	color: rgb(0, 237, 166);
 }
-#article-map h2 i{
-	color: rgb(19, 119, 124);
+
+#article-map div h2{
+	width: 70%;
+	margin: 0px;
+	display: inline;
 }
+#article-map div i.i1{
+	color: rgb(19, 119, 124);
+	font-size: 4vh;
+	left: 20px;
+	top: 6px;
+	position: absolute;
+}
+#article-map div i.i2{
+	color: rgb(19, 119, 124);
+	right: 20px;
+	font-size: 4vh;
+	position: absolute;
+	top: 6px;
+}
+
 #regulamento, #avisosimportantes {
 	margin-top: 20px;
 }
