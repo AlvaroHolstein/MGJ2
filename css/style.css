@@ -1595,9 +1595,15 @@ div.footer-logo h3.titlePatrocionadores {
 ul.list-inline li.list-inline-item a.tituloSeccao3:hover {
 	cursor: pointer; /* Fazer efeito ao clicar */
 }
-
+a i.fa.fa-facebook {
+	color: white;
+	background-color: blue;
+	padding: 5px;
+	border-radius: 20px;
+}
 a i.fa.fa-facebook:hover {
 	color: blue;
+	background-color: white;
 }
 
 /* #avisosimportantes div.textoAvisosImportantes a.link {
