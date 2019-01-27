@@ -726,6 +726,7 @@ ol {
 	background-image: url("../img/pattern.png");
 	background-repeat: repeat;
 	padding: 72px 0;
+	padding: 0px;
 }
 
 .footer-top-section .container {
@@ -834,6 +835,10 @@ ol {
 	padding: 18px 0 16px;
 	overflow: hidden;
 	background: #252525;
+}
+.footer-section div.container div.row div.col-md-12 ul{
+	/* background-color: blue; */
+	text-align: center;	
 }
 
 .footer-menu {
@@ -1595,11 +1600,21 @@ a i.fa.fa-facebook:hover {
 	color: blue;
 }
 
-#avisosimportantes div.textoAvisosImportantes a.link {
+/* #avisosimportantes div.textoAvisosImportantes a.link {
 	display: inline-block;
-	color: red;
+	color: yellow;
 	width: auto;
 	object-fit: cover; 
+}
+só se for para os contactos */
+
+#avisosRegulamento div.container div.col-md-12 ul.list-inline, article#informacoes h2,
+#article-map h2 {
+	background-image: url("../img/pattern.png");
+	background-repeat: repeat;
+	padding: 72px 0;
+	padding: 0px;
+	border-radius: 6px;
 }
 
 #inscricoes div.container {
@@ -1608,7 +1623,7 @@ a i.fa.fa-facebook:hover {
 	margin-bottom: 10px;
 }
 #inscricoes div.container div.row div h2 {
-	color: red;
+	color: rgb(0, 237, 166);
 	margin-bottom: 10px;
 }
 #inscricoes div.container div.row div.form {
@@ -1618,6 +1633,37 @@ a i.fa.fa-facebook:hover {
 #localExato a:hover {
 	color: blue;
 	cursor: help;
+}
+article#informacoes h2, #article-map h2 {
+	color: rgb(0, 237, 166);
+	margin: 10px 0px; 
+}
+article#informacoes h2 {
+	color: rgb(0, 237, 166);
+}
+#article-map h2 i{
+	color: rgb(19, 119, 124);
+}
+#regulamento, #avisosimportantes {
+	margin-top: 20px;
+}
+
+ul.listas{
+	color: black;
+	font-family: robotica;
+	font-size: 2vh;
+	margin: 0px;
+	list-style-type:georgian;
+}
+div.textoRegulamento, div.textoAvisosImportantes {
+	border: none !important;
+}
+
+ul.listas li a {
+	color: rgb(104, 104, 39);
+}
+ul.listas li a:hover {
+	color: rgb(19, 119, 124);
 }
 /*Mapa*/
 #map {
@@ -1646,6 +1692,6 @@ a i.fa.fa-facebook:hover {
     }
     to {
         width: 0%;
-        border: 2px solid blue;
+        border: 2px solid rgb(0, 237, 166);
     }
 }

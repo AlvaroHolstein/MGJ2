@@ -150,20 +150,20 @@ function changeTitlesSeccao3() {
 	let tituloSeccao3 = document.getElementsByClassName('tituloSeccao3')
 	if (containersSeccao3[0].className.includes('show')) {
 		tituloSeccao3[0].style.fontWeight = 'bold'
-		tituloSeccao3[0].style.color = 'red'
+		tituloSeccao3[0].style.color = 'rgb(0, 237, 166)'
 	}
 	else {
 		tituloSeccao3[0].style.fontWeight = 'initial'
-		tituloSeccao3[0].style.color = 'black'
+		tituloSeccao3[0].style.color = 'white'
 	}
 
 	if (containersSeccao3[1].className.includes('show')) {
 		tituloSeccao3[1].style.fontWeight = 'bold'
-		tituloSeccao3[1].style.color = 'blue'
+		tituloSeccao3[1].style.color = 'rgb(0, 237, 166)'
 	}
 	else {
 		tituloSeccao3[1].style.fontWeight = 'initial'
-		tituloSeccao3[1].style.color = 'black'
+		tituloSeccao3[1].style.color = 'white'
 	}
 
 	for (let i = 0; i < tituloSeccao3.length; i++) {
@@ -172,21 +172,21 @@ function changeTitlesSeccao3() {
 			if (i == 0) {
 				if (!containersSeccao3[0].className.includes('show')) {
 					tituloSeccao3[0].style.fontWeight = 'bold'
-					tituloSeccao3[0].style.color = 'red'
+					tituloSeccao3[0].style.color = 'rgb(0, 237, 166)'
 				}
 				else {
 					tituloSeccao3[0].style.fontWeight = 'initial'
-					tituloSeccao3[0].style.color = 'black'
+					tituloSeccao3[0].style.color = 'white'
 				}
 			}
 			if (i == 1) {
 				if (!containersSeccao3[1].className.includes('show')) {
 					tituloSeccao3[1].style.fontWeight = 'bold'
-					tituloSeccao3[1].style.color = 'blue'
+					tituloSeccao3[1].style.color = 'rgb(0, 237, 166)'
 				}
 				else {
 					tituloSeccao3[1].style.fontWeight = 'initial'
-					tituloSeccao3[1].style.color = 'black'
+					tituloSeccao3[1].style.color = 'white'
 				}
 			}
 		})
@@ -210,11 +210,11 @@ function changeOrientationBar() {
 
 	if (scrolly >= 1092 && scrolly <= 1642) {
 		// orientationIcons[1].style.color = 'red'
-		orientationIcons[1].style.backgroundColor = 'blue'
+		orientationIcons[1].style.backgroundColor = 'rgb(255, 179, 32)'
 	}
 	else {
 		// orientationIcons[1].style.color = 'unset'
-		orientationIcons[1].style.backgroundColor = 'unset'
+		orientationIcons[1].style.backgroundColor = 'white'
 	}
 
 	/* Para os avisos importantes vou ter que ver quantos têm show e fazer o calculo
@@ -232,11 +232,11 @@ function changeOrientationBar() {
 
 	if (scrolly >= 1643 && scrolly <= 1643 + tamanhoDivsAjuda) {
 		// orientationIcons[2].style.color = 'red'
-		orientationIcons[2].style.backgroundColor = 'blue'
+		orientationIcons[2].style.backgroundColor = 'rgb(255, 179, 32)'
 	}
 	else {
 		// orientationIcons[2].style.color = 'unset'
-		orientationIcons[2].style.backgroundColor = 'unset'
+		orientationIcons[2].style.backgroundColor = 'white'
 	}
 
 	// console.log(scrolly)

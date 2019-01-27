@@ -108,7 +108,13 @@
 			<div class="news-ticker-contant">
 				<div class="nt-item"><span class="new">Data de Inicio</span>De 22 a 24 de Fevereiro na <a target="_blank" href="https://www.google.com/maps/place/Campus+2+-+P.Porto+%7C+ESMAD/@41.3668624,-8.7404978,17z/data=!3m1!4b1!4m5!3m4!1s0xd24441837aa9c2d:0x39b9a396dac2269d!8m2!3d41.3668584!4d-8.7383091">ESMAD</a></div>
 				<div class="nt-item"><i class="fas fa-gamepad"></i> | <span class="textoNovidadesInscricoes">Tens até ao dia 17 de
-						Fevereiro para te <a href="#inscricoes">Inscreveres</a></span> | <i class="fas fa-gamepad"></i>
+						Fevereiro para te <a href="#inscricoes">Inscreveres</a></span> (Faltam <span class="btn btn-outline-danger" style="margin: 0px;">
+						<script>
+							let currentDate = new Date().getTime();
+							let endDate = new Date("2019/02/17").getTime();
+							let daysLeft = Math.abs(endDate - currentDate);
+							document.write(Math.ceil(daysLeft / 86400000))
+						</script></span> dias) | <i class="fas fa-gamepad"></i>
 				</div>
 				<!-- <div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div> -->
 			</div>
@@ -122,7 +128,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<article>
+					<article id="article-map">
 						<h2 class="text-center"><i class="fas fa-long-arrow-alt-down"></i> Estamos Aqui<i class="fas fa-long-arrow-alt-down"></i></h2>
 						<div id="map" class="col-xl-12 col-lg-12">
 						</div>
@@ -139,31 +145,33 @@
 					<hr class="devilhr">
 					<article id="informacoes">
 						<h2 class="text-center">Informações</h2>
-						<p>Inscrições: As incrições já se encontram fechadas, número limite de participantes alcançado.</p>
+						<ul class="listas">
+							<li>Inscrições: As incrições já se encontram fechadas, número limite de participantes alcançado.</li>
 
-						<p>Organização: Escola Superior de Media Artes e Design (ESMAD | P.Porto)</p>
+							<li>Organização: Escola Superior de Media Artes e Design (ESMAD | P.Porto)</li>
 
-						<p>
-							Duração: Total: 50 horas = 1hora (registo e apresentação) + 42horas (criação) + 7 horas
-							(apresentação e
-							avaliação do júri + entrega de prémios + cerimónia de encerramento)
-						</p>
+							<li>
+								Duração: Total: 50 horas = 1hora (registo e apresentação) + 42horas (criação) + 7 horas
+								(apresentação e
+								avaliação do júri + entrega de prémios + cerimónia de encerramento)
+							</li>
 
-						<p>Inicio Dia 16 de março às 17:00 horas
-							Fim: Dia 18 de março às 19:00 horas</p>
+							<li>Inicio Dia 16 de março às 17:00 horas
+								Fim: Dia 18 de março às 19:00 horas</li>
 
-						<p>Snacks: A organização fornece snacks ao longo dos dois dias.</p>
+							<li>Snacks: A organização fornece snacks ao longo dos dois dias.</li>
 
-						<p>Refeição: As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.</p>
+							<li>Refeição: As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.</li>
 
-						<p>Instalações: Sala com computadores / Auditório / Acesso à Internet.</p>
+							<li>Instalações: Sala com computadores / Auditório / Acesso à Internet.</li>
 
-						<p> Descanso: É aconselhável trazerem colchão de descanso (tipo campismo ou de ginásio) e sacos cama. A
-							organização vai disponibilizar uma sala com blackout para descanso.</p>
+							<li> Descanso: É aconselhável trazerem colchão de descanso (tipo campismo ou de ginásio) e sacos cama. A
+								organização vai disponibilizar uma sala com blackout para descanso.</li>
 
-						<p>
-							FESTA: No final temos uma surpresa para ti, uma performance multimédia para ajudar à festa.
-						</p>
+							<li>
+								FESTA: No final temos uma surpresa para ti, uma performance multimédia para ajudar à festa.
+							</li>
+						</ul>
 
 						<!-- <h2 class="text-center">Como chegar à ESMAD</h2> -->
 						<!-- <div id="map" class="col-xs-12 col-sm-12 col-md-12" style="margin-bottom: 50px"></div> -->
@@ -194,63 +202,69 @@
 												facebook e website do evento respetivamente - https://www.facebook.com/madgamejam/ (website ainda em
 												desenvolvimento, estará disponivel em breve), no entanto fica link para o website do ano anterior:
 												http://www.gamejam.intermediartes.com, isto em principio já não vai aprecer -->
-							<p>- Existe um discord do evento que devem usar para receber informação durante o evento e para tirarem duvidas
-								antes e durante do evento com maior facilidade, <a class="link" href="https://discord.gg/ZtnDq3H" target="_blank">juntem-se</a>.</p>
+							<ul class="listas">
+								<li>Existe um discord do evento que devem usar para receber informação durante o evento e para tirarem
+									duvidas
+									antes e durante do evento com maior facilidade, <a class="link" href="https://discord.gg/ZtnDq3H" target="_blank">juntem-se</a>.</li>
 
-							<p> - Se possível tragam extensões e cabos de rede, embora existam vários disponíveis no local.
-							</p>
-							<p>- Irá existir sempre snacks e café disponível.</p>
+								<li>Se possível tragam extensões e cabos de rede, embora existam vários disponíveis no local.
+								</li>
+								<li>Irá existir sempre snacks e café disponível.</li>
 
-							<p> - As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.
-							</p>
-							<p>- Existe estacionamento gratuito, abrigado e disponível 24H no local.</p>
+								<li>As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.
+								</li>
+								<li>Existe estacionamento gratuito, abrigado e disponível 24H no local.</li>
 
-							<p>- Temos uma sala com blackout para descanso.</p>
+								<li>Temos uma sala com blackout para descanso.</li>
 
-							<p> - Aconselhamos que tragam colchões/sacos cama e almofadas para dormirem.
-							</p>
-							<p>- Existem num raio de 500 metros, Burguer King, Pizza Hut, Pingo Doce, Continente, Staples, Worten, Metro,
-								Cafés e O BEM COMER (takeaway).</p>
+								<li>Aconselhamos que tragam colchões/sacos cama e almofadas para dormirem.
+								</li>
+								<li>Existem num raio de 500 metros, Burguer King, Pizza Hut, Pingo Doce, Continente, Staples, Worten, Metro,
+									Cafés e O BEM COMER (takeaway).</li>
 
-							<p>- Existe possibilidade de transporte do metro de Vila do conde/Alto de pega até ao local, basta contactarem
-								a
-								<a href="https://www.facebook.com/madgamejam/" target="_blank" class="link">pagina do facebook</a>,
-								ou mandar
-								SMS para 912259093 com pelo menos 1 dia de
-								antecedência.</p>
+								<li>Existe possibilidade de transporte do metro de Vila do conde/Alto de pega até ao local, basta contactarem
+									a
+									<a href="https://www.facebook.com/madgamejam/" target="_blank" class="link">pagina do facebook</a>,
+									ou mandar
+									SMS para 912259093 com pelo menos 1 dia de
+									antecedência.</li>
 
-							<p>- Quem vier sozinho, será colocado numa equipa feita de pessoas sozinhas, ou juntado a uma equipa que não
-								tenha
-								ainda 5 membros.</p>
+								<li>Quem vier sozinho, será colocado numa equipa feita de pessoas sozinhas, ou juntado a uma equipa que não
+									tenha
+									ainda 5 membros.</li>
+							</ul>
 						</div>
 					</div>
 
 					<!-- Regulamento -->
 					<div class="collapse show containersSeccao3" id="regulamento">
 						<div class="card card-body textoRegulamento">
-							<p> - As equipas podem ser constituídas por até 5 participantes, criadas com antecedência ou na hora.
-							</p>
-							<p> - O jogo deve ser desenvolvido para correr em sistemas operativos Windows ou Mac OSX, como executável ou
-								aplicação Web.</p>
+							<ul class="listas">
+								<li>As equipas podem ser constituídas por até 5 participantes, criadas com antecedência ou na hora.
+								</li>
+								<li>O jogo deve ser desenvolvido para correr em sistemas operativos Windows ou Mac OSX, como executável ou
+									aplicação Web.</li>
 
-							<p>- O tema e regras específicas para o jogo serão anunciados no próprio dia.</p>
+								<li>O tema e regras específicas para o jogo serão anunciados no próprio dia.</li>
 
-							<p>- Os jogos terão de se relacionar de alguma forma com este tema.</p>
+								<li>Os jogos terão de se relacionar de alguma forma com este tema.</li>
 
-							<p>- Cada equipa é livre de usar as ferramentas que quiserem, desde que as tenha de forma legal na sua máquina.
-								É
-								aconselhada a utilização de motores de jogos gráficos (ex. Unreal, Unity) e plugins gratuitos de forma a
-								facilitar o desenvolvimento de jogos.</p>
+								<li>Cada equipa é livre de usar as ferramentas que quiserem, desde que as tenha de forma legal na sua
+									máquina.
+									É
+									aconselhada a utilização de motores de jogos gráficos (ex. Unreal, Unity) e plugins gratuitos de forma a
+									facilitar o desenvolvimento de jogos.</li>
 
-							<p>- Os materiais / Assets que sejam utilizados terão de ser criados pela própria equipa no dia, ou livres de
-								direitos / royalty free.</p>
+								<li>Os materiais / Assets que sejam utilizados terão de ser criados pela própria equipa no dia, ou livres de
+									direitos / royalty free.</li>
 
-							<p> - O evento irá realizar-se nas instalações da ESMAD (Escola Superior de Media Artes e Design).
-							</p>
-							<p> - As inscrições terminam no dia 18 de Fevereuri de 2019 e estão limitadas a 100 pessoas.
-							</p>
-							<p> - A organização não se responsabiliza por qualquer dano causado ao espaço ou materiais expostos.
-							</p>
+								<li>O evento irá realizar-se nas instalações da ESMAD (Escola Superior de Media Artes e Design).
+								</li>
+								<li>As inscrições terminam no dia 18 de Fevereuri de 2019 e estão limitadas a 100 pessoas.
+								</li>
+								<li>A organização não se responsabiliza por qualquer dano causado ao espaço ou materiais expostos.
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -295,7 +309,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="footer-logo">
-						<img src="img/MGJ/Logo - Black.png" alt="até te carregas te" />
+						<img src="img/MGJ/novo_logo.png" alt="até te carregas te" />
 						<!-- <h3 class="titlePatrocionadores">Patrocionadores</h3>
 						<h5>Isto vai ser um footer bem lindo muito bem</h5> -->
 					</div>
@@ -307,9 +321,9 @@
 						<img id="imagemMudar" src="img/MGJ/Logo_ciano.png" alt="">
 					</div>
 				</div>
-				<div class="col-md-12 text-center">
+				<!-- <div class="col-md-12 text-center">
 					<h2>Patrocionios</h2>
-				</div>
+				</div> -->
 				<!-- <div class="col-lg-4 col-md-6"> -->
 				<!-- <div class="footer-widget mb-5 mb-md-0">
 						<h4 class="fw-title">Latest Posts</h4>
@@ -384,13 +398,18 @@
 	<!-- Footer section -->
 	<!-- É de deixar ficar só com isto -->
 	<footer class="footer-section">
-		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contacta-nos</a></li>
-				<li><a href="http://www.intermediartes.com/">Intermediartes</a></li>
-				<li><a href="https://colorlib.com" target="_blank">Colorlib</a></li>
-			</ul>
+		<div class="container ">
+			<div class="row">
+				<div class="col-md-12">
+
+					<ul class="footer-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contacta-nos</a></li>
+						<li><a href="http://www.intermediartes.com/">Intermediartes</a></li>
+						<li><a href="https://colorlib.com" target="_blank">Colorlib</a></li>
+					</ul>
+				</div>
+			</div>
 			<!-- <p class="copyright"> -->
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			<!-- Copyright &copy;
