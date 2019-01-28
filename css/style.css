@@ -1674,6 +1674,9 @@ article#informacoes h2 {
 #regulamento, #avisosimportantes {
 	margin-top: 20px;
 }
+.tituloSeccao3:hover {
+	color: blue !important;
+}
 
 ul.listas{
 	color: black;
